@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/title_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/nav_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/keepIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换城市"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search"
+            android:hint="输入城市码"
+            android:padding="5dp"
+            android:layout_margin="9dp"
+            android:completionThreshold="1"/>
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_keep"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>
